@@ -1,0 +1,155 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+.navbar {
+  box-shadow:0 4px 2px -2px black;
+  overflow: hidden;
+  background: black;
+  opacity: 0.9;
+  height: 12%;
+}
+.navbar a {
+  margin-top: 2%;
+  float: left;
+  display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+    padding: 20px 18px;
+    text-decoration: none;
+    transition: background 0.5s;
+
+}
+.navbar a:hover {
+  background: #F0663B;
+  color: white;
+
+}
+.navbar .icon {
+  display: none;
+}
+.dropdown {
+  margin-top: 2%;
+  float: left;
+  overflow: hidden;
+}
+.dropdown .drop {
+  font-size: 19px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 20px 20px;
+    background-color: black;
+
+    font-family: inherit;
+    margin: 0;
+}
+.drop .fa-angle-double-up,
+.drop:hover .fa-angle-double-down {
+  display: none;
+
+}
+.drop:hover .fa-angle-double-up {
+  display: inline;
+}
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  top:8%;
+  min-width: 150px;
+  z-index: 100;
+}
+.drop-content a {
+  float: none;
+  color: #fff;
+  padding: 12px, 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .drop-content {
+  display: block;
+}
+.drop-content a:hover {
+  background-color: rgba(179, 167, 167, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .aboutus{
+    margin-top:30% !important;
+  }
+  .logo{
+    margin-left: 6%;
+    margin-top:3% !important;
+  }
+  .icon{
+    display: block;
+  }
+  .logo-right{
+    display: none;
+  }
+  .navbar a {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar.responsive {
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+
+  }
+  .options{
+    position: fixed;
+    background: black;
+    z-index: 100;
+    right: 10%;
+    left: 3%;
+    top:11%;
+    width: 90%;
+    text-align: right;
+
+  }
+  .navbar.responsive a.icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    padding-left: 20px;
+
+
+  }
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+  .navbar.responsive .drop-content {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: black;
+  }
+  .navbar.responsive .drop-content a {
+
+  }
+  .navbar.responsive .dropdown .drop {
+    display: block;
+    width: 100%;
+
+
+  }
+  .navbar.responsive .dropdown .drop:hover {
+    background-color: rgba(179, 167, 167, 0.5);
+  }
+  .start{
+    margin-top: 25% !important;
+  }
+
+}
